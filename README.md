@@ -1,2 +1,3 @@
-# strapi-dev
-Development diverse
+# Strapi application
+
+A quick description of your strapi application
