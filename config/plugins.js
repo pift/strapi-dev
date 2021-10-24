@@ -1,5 +1,5 @@
 module.exports = ({ env }) => ({
-  // ...
+
   email: {
     provider: 'sendgrid',
     providerOptions: {
@@ -11,5 +11,14 @@ module.exports = ({ env }) => ({
       testAddress: 'm@coa.dk',
     },
   },
-  // ...
+  graphql: {
+    endpoint: '/graphql',
+    shadowCRUD: true,
+    playgroundAlways: false,
+    depthLimit: 7,
+    amountLimit: 100,
+    apolloServer: {
+      tracing: false,
+    },
+  },
 });
