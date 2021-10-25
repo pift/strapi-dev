@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "seasons",
+  "info": {
+    "name": "season"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "periode": {
+      "type": "string"
+    },
+    "apple": {
+      "via": "seasons",
+      "model": "apple"
+    }
+  }
+}

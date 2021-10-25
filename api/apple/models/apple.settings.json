@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "apples",
+  "info": {
+    "name": "apple",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "seasons": {
+      "collection": "season",
+      "via": "apple"
+    },
+    "smag": {
+      "type": "enumeration",
+      "enum": [
+        "sauer",
+        "middel",
+        "sweet"
+      ]
+    }
+  }
+}

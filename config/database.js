@@ -13,14 +13,6 @@ module.exports = ({ env }) => ({
         authenticationDatabase: env('AUTHENTICATION_DATABASE', null),
         ssl: env.bool('DATABASE_SSL', true),
       },
-      // connector: 'bookshelf',
-      // settings: {
-      //   client: 'sqlite',
-      //   filename: env('DATABASE_FILENAME', '.tmp/data.db'),
-      // },
-      // options: {
-      //   useNullAsDefault: true,
-      // },
     },
   },
 });
